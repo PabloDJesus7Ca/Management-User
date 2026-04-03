@@ -25,17 +25,23 @@ El sistema implementa una arquitectura cliente-servidor, consumiendo una API RES
 * CSS
 
 ## 📌 Arquitectura
-
 El proyecto está dividido en dos partes principales:
 
 * Frontend: Aplicación en Angular encargada de la interfaz de usuario
 * Backend: API REST desarrollada con Node.js y Express
 * Base de datos: PostgreSQL para almacenamiento persistente
 
+* ## 📁 Estructura del proyecto
+  
+* Management-User/
+├── Frontend/
+├── Backend/
+├── .gitignore
+└── README.md
+
 ## ▶️ Ejecución del proyecto
 
 ### 🔹 Backend
-
 npm install
 npm run dev
 
@@ -50,6 +56,16 @@ ng serve
 
 ng build --configuration production
 
+🔐 Variables de entorno
+Crea un archivo .env en la carpeta Backend con tus configuraciones:
+
+DB_HOST=localhost
+DB_USER=tu_usuario
+DB_PASSWORD=tu_password
+DB_NAME=tu_base_de_datos
+DB_PORT=5432
+URL_ENDPOINT=url_de_tu_api
+PORT=3000
 
 ## 🔮 Roadmap (Mejoras futuras)
 
