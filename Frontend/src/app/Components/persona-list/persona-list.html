@@ -1,0 +1,55 @@
+<div class="list-container">
+  <div class="list-header">
+    <h2>Personas</h2>
+    <a class="btn-nuevo" routerLink="/personas/nuevo">+ Nueva persona</a>
+  </div>
+
+  <input
+    class="buscador"
+    [ngModel]="busqueda()"
+    (ngModelChange)="busqueda.set($event); buscar()"
+    placeholder="Buscar por nombre o apellido..."
+  />
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  @if (cargando()) {
+    <p class="msg-cargando">Cargando....</p>
+  }
+
+  @if (!cargando() && personas().length === 0) {
+    <p class="msg-vacio">No hay personas registradas</p>
+  }
+
+  @if (!cargando() && personas().length > 0) {
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Email</th>
+          <th>Edad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      @for (p of personas(); track p.id) {
+        <tbody>
+          <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.apellido }}</td>
+            <td>{{ p.email || '—' }}</td>
+            <td>{{ p.edad || '—' }}</td>
+            <td>
+              <div class="acciones">
+                <a class="btn-editar" [routerLink]="['/personas/editar', p.id]">Editar</a>
+                <button class="btn-eliminar" (click)="eliminar(p.id)">Eliminar</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      }
+    </table>
+  }
+</div>

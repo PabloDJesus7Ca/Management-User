@@ -1,0 +1,152 @@
+.list-container {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.list-header h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.btn-nuevo {
+  padding: 8px 16px;
+  background: #534ab7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.btn-nuevo:hover {
+  background: #3c3489;
+}
+
+.buscador {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #111827;
+  background: #ffffff;
+  margin-bottom: 1.25rem;
+  outline: none;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+  box-sizing: border-box;
+}
+
+.buscador:focus {
+  border-color: #534ab7;
+  box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.12);
+}
+
+.buscador::placeholder {
+  color: #9ca3af;
+}
+
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  color: #dc2626;
+  margin-bottom: 1rem;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+.tabla thead tr {
+  background: #f9fafb;
+}
+
+.tabla th {
+  text-align: left;
+  padding: 11px 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla td {
+  padding: 13px 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla tbody tr:hover td {
+  background: #f9fafb;
+}
+
+.acciones {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-editar {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  transition: background 0.15s;
+}
+
+.btn-editar:hover {
+  background: #e5e7eb;
+}
+
+.btn-eliminar {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: none;
+  background: #fef2f2;
+  color: #dc2626;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-eliminar:hover {
+  background: #fee2e2;
+}
+
+.msg-vacio,
+.msg-cargando {
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
