@@ -34,38 +34,39 @@ El proyecto está dividido en dos partes principales:
 * ## 📁 Estructura del proyecto
   
 * Management-User/
-├── Frontend/
-├── Backend/
-├── .gitignore
-└── README.md
+* ├── Frontend/
+* ├── Backend/
+* ├── .gitignore
+* └── README.md
 
 ## ▶️ Ejecución del proyecto
 
 ### 🔹 Backend
-npm install
-npm run dev
+
+* npm install
+* npm run dev
 
 
 ### 🔹 Frontend
 
-npm install
-ng serve
+* npm install
+* ng serve
 
 
 ## 📦 Build de producción
 
 ng build --configuration production
 
-🔐 Variables de entorno
+## 🔐 Variables de entorno
 Crea un archivo .env en la carpeta Backend con tus configuraciones:
 
-DB_HOST=localhost
-DB_USER=tu_usuario
-DB_PASSWORD=tu_password
-DB_NAME=tu_base_de_datos
-DB_PORT=5432
-URL_ENDPOINT=url_de_tu_api
-PORT=3000
+* DB_HOST=localhost
+* DB_USER=tu_usuario
+* DB_PASSWORD=tu_password
+* DB_NAME=tu_base_de_datos
+* DB_PORT=5432
+* URL_ENDPOINT=url_de_tu_api
+* PORT=3000
 
 ## 🔮 Roadmap (Mejoras futuras)
 
