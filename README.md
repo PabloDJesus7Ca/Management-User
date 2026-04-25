@@ -107,7 +107,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-4. Abre el browser en **http://localhost**
+4. Abre el browser en **<http://localhost>**
 
 ### Comandos útiles
 
@@ -148,7 +148,7 @@ npm install
 ng serve
 ```
 
-Abre **http://localhost:4200** en el browser.
+Abre **<http://localhost:4200>** en el browser.
 
 ---
 
