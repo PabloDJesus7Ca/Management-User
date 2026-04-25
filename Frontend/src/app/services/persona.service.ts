@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class PersonasService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:3000/api/personas';
+  private apiUrl = '/api/personas';
 
   obtenerTodas(): Observable<Persona[]> {
     return this.http.get<Persona[]>(this.apiUrl);
