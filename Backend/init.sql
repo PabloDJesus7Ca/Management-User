@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS personas (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  apellido VARCHAR(100) NOT NULL,
+  email VARCHAR(150) UNIQUE,
+  edad INTEGER,
+  creado_en TIMESTAMP DEFAULT NOW()
+);
